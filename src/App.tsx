@@ -7,6 +7,8 @@ import { useTranslation } from 'react-i18next';
 import './i18n'; // Importa a inicialização
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import flagBR from './assets/flag-br.png';
+import flagUK from './assets/flag-uk.png';
 
 function App() {
   
@@ -23,10 +25,10 @@ function App() {
 
         <div className="m-2">
           <button className="cursor-pointer m-2 hover:scale-110 transition-transform duration-100 ease-in-out" title="Português" onClick={() => changeLanguage('pt')}>
-            <img src="/src/assets/flag-br.png" alt="Português" className="w-20" />
+            <img src={flagBR} alt="Português" className="w-20" />
           </button>
           <button className="cursor-pointer m-2 hover:scale-110 transition-transform duration-100 ease-in-out" title="English" onClick={() => changeLanguage('en')}>
-            <img src="/src/assets/flag-uk.png" alt="English" className="w-20" />
+            <img src={flagUK} alt="English" className="w-20" />
           </button>      
         </div>
 
